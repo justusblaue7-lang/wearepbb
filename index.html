@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pickleball Buddies Lübbecke</title>
+<meta name="description" content="Pickleball Buddies in Lübbecke: Pickleball, Beats &amp; Beyond. Pickleball mit Atmosphäre, Musik und Events, ein moderner Treffpunkt für aktive Menschen im Kreis Minden-Lübbecke.">
+<meta name="theme-color" content="#19181e">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="preload" as="image" type="image/webp" imagesrcset="assets/renders/hero-1280.webp 1280w, assets/renders/hero-1920.webp 1920w, assets/renders/hero-2560.webp 2560w, assets/renders/hero-3840.webp 3840w" imagesizes="max(100vw, 177.8vh)">
+<link rel="stylesheet" href="css/style.css?v=20261029a">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- Shared drawings. pbb-logo: centre lines of the founders' neon sign (assets/brand/pbb-neon.jpg, traced by
+     render/trace_logo.py; the same path as assets/pbb-logo.svg and the 3D signs). -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="pbb-logo" viewBox="0 0 640 423.6"><path fill="none" stroke="currentColor" style="stroke-width: var(--lw, 10.87)" stroke-linecap="round" stroke-linejoin="round" d="M46.06 355.16C43.81 347.52 48.14 339.28 50.70 332.14C57.08 314.38 64.87 297.02 72.38 279.71C100.07 215.88 136.85 136.25 174.34 78.16M60.86 237.46C103.15 220.24 145.91 203.61 186.43 182.39C216.74 166.52 239.66 154.19 268.39 135.05C293.40 118.39 323.97 93.13 338.95 66.88C350.94 45.87 347.12 26.41 323.31 17.57C316.61 15.08 309.93 13.44 302.86 12.45C291.60 10.87 280.18 10.96 268.83 11.23C254.10 11.59 239.26 14.46 224.93 17.66C173.63 29.11 122.58 49.13 78.64 78.29C59.22 91.18 40.06 104.91 24.73 122.67C19.18 129.10 10.87 136.57 12.22 145.83M306.85 243.80C314.31 238.89 321.53 233.60 329.29 229.17C335.80 225.45 342.62 222.32 349.27 218.86C364.12 211.13 379.35 202.29 392.32 191.66C400.80 184.72 414.79 173.16 414.65 161.08C414.40 139.95 378.91 139.26 364.25 140.69C330.39 143.98 297.87 154.19 266.90 167.97C253.00 174.15 235.94 182.37 225.09 193.05M429.49 275.52C424.94 268.59 421.98 259.05 415.15 253.97C403.29 245.15 373.26 243.09 358.63 243.09C306.99 243.09 264.84 253.98 218.04 275.52M494.10 252.73C501.08 247.56 507.78 241.99 515.10 237.29C519.61 234.40 524.33 231.94 528.94 229.23C544.39 220.13 559.80 210.77 573.66 199.34C581.70 192.71 595.33 181.12 595.23 169.72C595.11 156.15 581.87 153.09 570.96 151.74C567.12 151.27 563.29 150.71 559.40 150.81C555.13 150.93 550.84 151.66 546.61 152.25C515.58 156.54 486.15 166.28 457.65 179.13C442.08 186.15 425.47 194.28 413.28 206.44M556.43 249.44C489.08 249.44 448.12 267.61 389.45 297.46C368.46 308.14 347.39 318.92 327.37 331.37C309.66 342.39 288.03 355.75 274.42 371.64C262.91 385.08 264.02 396.75 281.21 403.76C285.72 405.60 290.47 406.50 295.25 407.32C327.17 412.74 361.57 407.28 393.00 400.81C450.16 389.04 517.82 367.19 569.14 339.37C587.45 329.44 627.72 305.74 628.44 282.56C629.13 260.08 597.32 252.60 579.98 250.44C572.14 249.47 564.32 249.44 556.43 249.44M218.74 337.54C220.60 327.58 241.24 292.15 247.47 281.59C262.19 256.63 276.58 231.49 291.56 206.70C295.99 199.36 299.92 191.69 304.73 184.59M420.33 337.54C423.35 325.10 439.37 299.22 446.42 287.26C454.90 272.84 463.86 258.73 472.43 244.36C480.82 230.28 488.78 215.89 497.86 202.21"/></symbol>
+</svg>
+
+<!-- Path-traced renders of the planned hall (render/README in the repo). JS crossfades them while you scroll,
+     lifts the hero scrim and dims the stage into graphite wherever the content bands run. -->
+<div class="stage" aria-hidden="true">
+  <picture class="shot" data-shot="hero">
+    <source type="image/webp" srcset="assets/renders/hero-1280.webp 1280w, assets/renders/hero-1920.webp 1920w, assets/renders/hero-2560.webp 2560w, assets/renders/hero-3840.webp 3840w" sizes="max(100vw, 177.8vh)">
+    <img src="assets/renders/hero-1920.jpg" srcset="assets/renders/hero-1280.jpg 1280w, assets/renders/hero-1920.jpg 1920w, assets/renders/hero-2560.jpg 2560w, assets/renders/hero-3840.jpg 3840w" sizes="max(100vw, 177.8vh)" alt="" decoding="async" fetchpriority="high">
+  </picture>
+  <picture class="shot" data-shot="courts">
+    <source type="image/webp" data-srcset="assets/renders/courts-1280.webp 1280w, assets/renders/courts-1920.webp 1920w, assets/renders/courts-2560.webp 2560w, assets/renders/courts-3840.webp 3840w" sizes="max(100vw, 177.8vh)">
+    <img data-src="assets/renders/courts-1920.jpg" data-srcset="assets/renders/courts-1280.jpg 1280w, assets/renders/courts-1920.jpg 1920w, assets/renders/courts-2560.jpg 2560w, assets/renders/courts-3840.jpg 3840w" sizes="max(100vw, 177.8vh)" alt="" decoding="async">
+  </picture>
+  <picture class="shot" data-shot="events">
+    <source type="image/webp" data-srcset="assets/renders/events-1280.webp 1280w, assets/renders/events-1920.webp 1920w, assets/renders/events-2560.webp 2560w, assets/renders/events-3840.webp 3840w" sizes="max(100vw, 177.8vh)">
+    <img data-src="assets/renders/events-1920.jpg" data-srcset="assets/renders/events-1280.jpg 1280w, assets/renders/events-1920.jpg 1920w, assets/renders/events-2560.jpg 2560w, assets/renders/events-3840.jpg 3840w" sizes="max(100vw, 177.8vh)" alt="" decoding="async">
+  </picture>
+  <div class="scrim" id="scrim"></div>
+  <div class="veil" id="veil"></div>
+</div>
+<p class="viz-note" id="vizNote">Visualisierung · geplanter Endzustand</p>
+<!-- scroll progress: a Flieder pickleball rolls down a hairline rail in the right margin; JS moves it and turns its
+     holes by the distance travelled (light and shading stay put, so it reads as a sphere); drag it or click the rail to scroll -->
+<div class="roll" id="roll" aria-hidden="true">
+  <i class="roll-fill"></i>
+  <svg class="roll-ball" viewBox="-10 -10 20 20">
+    <defs>
+      <radialGradient id="rollLimb" cx="0" cy="0" r="10" gradientUnits="userSpaceOnUse"><stop offset=".55" stop-color="#3a2350" stop-opacity="0"/><stop offset="1" stop-color="#3a2350" stop-opacity=".42"/></radialGradient>
+      <radialGradient id="rollLight" cx="-3.4" cy="-4" r="8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity=".62"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    </defs>
+    <circle r="10" fill="#d7a7f3"/>
+    <g id="rollHoles" fill="#2a2233" fill-opacity=".5">
+      <circle r="1.25"/>
+      <circle cy="-4.7" r="1.1" transform="rotate(0)"/><circle cy="-4.7" r="1.1" transform="rotate(72)"/><circle cy="-4.7" r="1.1" transform="rotate(144)"/><circle cy="-4.7" r="1.1" transform="rotate(216)"/><circle cy="-4.7" r="1.1" transform="rotate(288)"/>
+      <ellipse cy="-8" rx="1" ry=".62" transform="rotate(36)"/><ellipse cy="-8" rx="1" ry=".62" transform="rotate(72)"/><ellipse cy="-8" rx="1" ry=".62" transform="rotate(108)"/><ellipse cy="-8" rx="1" ry=".62" transform="rotate(144)"/><ellipse cy="-8" rx="1" ry=".62" transform="rotate(180)"/><ellipse cy="-8" rx="1" ry=".62" transform="rotate(216)"/><ellipse cy="-8" rx="1" ry=".62" transform="rotate(252)"/><ellipse cy="-8" rx="1" ry=".62" transform="rotate(288)"/><ellipse cy="-8" rx="1" ry=".62" transform="rotate(324)"/><ellipse cy="-8" rx="1" ry=".62" transform="rotate(360)"/>
+    </g>
+    <circle r="10" fill="url(#rollLimb)"/>
+    <circle r="10" fill="url(#rollLight)"/>
+  </svg>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#hero" aria-label="Pickleball Buddies, nach oben"><svg class="pbb" viewBox="0 0 640 423.6" aria-hidden="true"><use href="#pbb-logo"/></svg><span>Pickleball Buddies</span></a>
+  <nav aria-label="Hauptnavigation"><a href="#pickleball">Pickleball</a><a href="#courts">Courts &amp; More</a><a href="#vonwem">We are PBB</a><a href="#events">Events</a><a href="#regeln">Regeln</a></nav>
+  <a class="btn btn-primary" href="#warteliste">Warteliste</a>
+</header>
+
+<main>
+  <section class="scene hero left" id="hero" data-shot="hero">
+    <div class="hero-in">
+      <svg class="pbb" viewBox="0 0 640 423.6" aria-hidden="true"><use href="#pbb-logo"/></svg>
+      <p class="motto"><span class="pbb-line"><b>P</b>ickleball, <b>B</b>eats &amp; <b>B</b>eyond</span></p>
+      <h1>Pickleball Buddies</h1>
+      <p class="lede">Pickleball mit Atmosphäre, Events und guter Musik.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#warteliste"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Auf die Warteliste</a>
+      </div>
+    </div>
+    <div class="scrollhint" aria-hidden="true">Scrollen<i></i></div>
+  </section>
+
+  <section class="sheet" id="pickleball">
+    <div class="wrap">
+      <figure class="clip reveal">
+        <video id="clip" autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="metadata" poster="assets/video/pickleball-poster.jpg?v=7" aria-label="Pickleball-Doppel von oben, aus der Drohne gefilmt">
+          <source src="assets/video/pickleball-1440.mp4?v=7" type="video/mp4" media="(min-width: 1200px)">
+          <source src="assets/video/pickleball-1080.mp4?v=7" type="video/mp4" media="(min-width: 760px)">
+          <source src="assets/video/pickleball-720.mp4?v=7" type="video/mp4">
+        </video>
+      </figure>
+    </div>
+  </section>
+
+  <section class="scene left" id="courts" data-shot="courts">
+    <div class="panel reveal">
+      <p class="eyebrow">Courts &amp; More</p>
+      <h2>Good Rallies, better Vibes.</h2>
+      <p>Offizielle Maße, angenehmes Licht, bester Sportboden.</p>
+    </div>
+  </section>
+
+  <section class="sheet" id="vonwem">
+    <div class="wrap">
+      <div class="head reveal">
+        <div><p class="eyebrow">Das Team</p><h2>We are <em>PBB.</em></h2></div>
+        <p class="intro">Hinter Pickleball Buddies stehen Justus, Julian, Sarita und Felix. Wir bauen in Lübbecke einen Treffpunkt, an dem Sport, Sound und Community zusammenkommen. We are PBB heißt: Wer hier spielt, gehört dazu.</p>
+      </div>
+      <div class="crew">
+        <article class="person reveal">
+          <picture class="photo"><source type="image/webp" srcset="assets/team/justus.webp?v=20261028a"><img src="assets/team/justus.jpg?v=20261028a" alt="Justus" width="720" height="720" loading="lazy" decoding="async"></picture>
+          <h3>Justus</h3>
+        </article>
+        <article class="person reveal">
+          <picture class="photo"><source type="image/webp" srcset="assets/team/julian.webp?v=20261028b"><img src="assets/team/julian.jpg?v=20261028b" alt="Julian" width="720" height="720" loading="lazy" decoding="async"></picture>
+          <h3>Julian</h3>
+        </article>
+        <article class="person reveal">
+          <picture class="photo"><source type="image/webp" srcset="assets/team/sarita.webp?v=20261028a"><img src="assets/team/sarita.jpg?v=20261028a" alt="Sarita" width="720" height="720" loading="lazy" decoding="async"></picture>
+          <h3>Sarita</h3>
+        </article>
+        <article class="person reveal">
+          <picture class="photo"><source type="image/webp" srcset="assets/team/felix.webp?v=20261028a"><img src="assets/team/felix.jpg?v=20261028a" alt="Felix" width="720" height="720" loading="lazy" decoding="async"></picture>
+          <h3>Felix</h3>
+        </article>
+      </div>
+      <article class="tile wide merch-tile reveal">
+        <picture class="visual merch">
+          <source type="image/webp" srcset="assets/merch/pbb-merch-1280.webp 1280w, assets/merch/pbb-merch-1638.webp 1638w" sizes="(max-width: 920px) 100vw, 690px">
+          <img src="assets/merch/pbb-merch-1280.jpg" srcset="assets/merch/pbb-merch-1280.jpg 1280w, assets/merch/pbb-merch-1638.jpg 1638w" sizes="(max-width: 920px) 100vw, 690px" width="1638" height="1024" alt="PBB-Hoodies und -Shirts in Flieder und Schwarz mit PBB-Logo" loading="lazy" decoding="async">
+        </picture>
+        <div class="tile-body">
+          <p class="eyebrow">PBB Merch</p>
+          <h3>Hoodies und Shirts mit PBB-Print.</h3>
+          <p>In Flieder und in Schwarz, im Pro-Shop am Eingang.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="scene right" id="events" data-shot="events">
+    <div class="panel wide reveal">
+      <p class="eyebrow">Signature Events</p>
+      <h2>Atmosphäre ist unser Ding.</h2>
+      <ul class="events"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l11-2.2v12"/><circle cx="6.2" cy="18" r="2.8"/><circle cx="17.2" cy="15.8" r="2.8"/></svg><span>Friday <b>Social</b></span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.6A8.2 8.2 0 1 1 9.4 4a6.4 6.4 0 0 0 10.6 10.6z"/><path d="M16.5 3.5v3M15 5h3"/></svg><span>Beginners <b>Night</b></span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg><span>One Point <b>Challenge</b></span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><g transform="rotate(-38 12 12)"><rect x="9" y="1.8" width="6" height="9.4" rx="3"/><path d="M12 11.2v9"/></g><g transform="rotate(38 12 12)"><rect x="9" y="1.8" width="6" height="9.4" rx="3"/><path d="M12 11.2v9"/></g></svg><span>Corporate <b>Clash</b></span></li></ul>
+    </div>
+  </section>
+
+  <section class="sheet" id="regeln">
+    <div class="wrap">
+      <div class="head reveal">
+        <div><p class="eyebrow">Pickleball in 60 Sekunden</p><h2>Easy to Learn. Hard to Quit.</h2></div>
+        <p class="intro">Pickleball mischt Tennis, Badminton und Tischtennis. Das Feld ist klein, der Ball aus Kunststoff mit Löchern, die Schläger sind fest. Gespielt wird meist im Doppel.</p>
+      </div>
+      <div class="rules">
+        <div class="card court reveal">
+          <h3>Das Spielfeld</h3>
+          <svg viewBox="-34 -40 272 504" role="img" aria-label="Pickleball-Spielfeld, 6,10 mal 13,41 Meter, Kitchen 2,13 Meter vor dem Netz">
+            <rect x="0" y="0" width="200" height="440" fill="#302f38" rx="3"/><rect x="0" y="150" width="200" height="140" fill="#c597e0"/>
+            <g stroke="#f4f1f9" stroke-width="3" fill="none"><rect x="1.5" y="1.5" width="197" height="437"/><line x1="0" y1="150" x2="200" y2="150"/><line x1="0" y1="290" x2="200" y2="290"/><line x1="100" y1="0" x2="100" y2="150"/><line x1="100" y1="290" x2="100" y2="440"/></g>
+            <line x1="-8" y1="220" x2="208" y2="220" stroke="#19181e" stroke-width="5"/><line x1="-8" y1="220" x2="208" y2="220" stroke="#f4f1f9" stroke-width="1.4" stroke-dasharray="3 3"/>
+            <text class="dim" x="100" y="-24" text-anchor="middle">6,10 m</text><text class="dim" x="236" y="224" text-anchor="middle" transform="rotate(90 236 224)">13,41 m</text>
+            <text class="in" x="100" y="190" text-anchor="middle">Kitchen</text><text class="in s" x="100" y="206" text-anchor="middle">2,13 m</text><text class="in s" x="100" y="244" text-anchor="middle">Netz · 86 cm</text>
+            <g stroke="#8e8c98" stroke-width="1.2"><line x1="0" y1="-12" x2="200" y2="-12"/><line x1="0" y1="-16" x2="0" y2="-8"/><line x1="200" y1="-16" x2="200" y2="-8"/><line x1="222" y1="0" x2="222" y2="440"/><line x1="218" y1="0" x2="226" y2="0"/><line x1="218" y1="440" x2="226" y2="440"/></g>
+          </svg>
+          <p>So groß wie ein Badminton-Doppelfeld.</p>
+          <div class="kitchen-note"><b>2,13 m</b><h4>Die Kitchen</h4><p>Die Zone direkt am Netz. Wer in ihr steht, darf den Ball nicht aus der Luft schlagen. Springt er dort auf, darf man hinein.</p></div>
+        </div>
+        <div class="side">
+        <div class="card score reveal"><div class="num">11 Punkte</div><ul class="points"><li>Gespielt wird bis 11, gewonnen mit 2 Punkten Vorsprung</li><li>Punkte macht nur das Team mit Aufschlag</li><li>Meist im Best of 3</li></ul></div>
+        <article class="tile kit-tile reveal">
+        <picture class="visual paddle">
+          <source type="image/webp" srcset="assets/paddle/pbb-paddle-1280.webp?v=3 1280w, assets/paddle/pbb-paddle-1904.webp?v=3 1904w" sizes="(max-width: 920px) 100vw, 690px">
+          <img src="assets/paddle/pbb-paddle-1280.jpg?v=3" srcset="assets/paddle/pbb-paddle-1280.jpg?v=3 1280w, assets/paddle/pbb-paddle-1904.jpg?v=3 1904w" sizes="(max-width: 920px) 100vw, 690px" width="1904" height="1190" alt="Pickleball-Schläger mit PBB-Print und ein Ball in Flieder" loading="lazy" decoding="async">
+        </picture>
+          <div class="tile-body">
+            <p class="eyebrow">Ausrüstung</p>
+            <h3>Schläger und Ball.</h3>
+            <div class="kit">
+              <div><h4>Der Schläger</h4><ul class="points"><li>Feste, glatte Fläche ohne Saiten</li><li>Leicht: etwa 210 bis 240 g</li><li>Höchstens 43 cm lang</li></ul></div>
+              <div><h4>Der Ball</h4><ul class="points"><li>Etwa 7,4 cm groß und nur 22 bis 26 g leicht</li><li>Die Löcher bremsen ihn, er fliegt langsamer als ein Tennisball</li></ul></div>
+            </div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sheet" id="warteliste">
+    <div class="wrap">
+      <p class="eyebrow reveal">Vision</p>
+      <h2 class="vision reveal">Der Treffpunkt für <em>aktive Menschen</em> in der Region.</h2>
+      <div class="join reveal">
+        <div class="join-text">
+          <p class="eyebrow">Warteliste</p>
+          <h3>Sei dabei, wenn die Courts aufgehen.</h3>
+          <p>Die Halle ist in Vorbereitung. Trag dich ein und erfahre als Erstes, wann sie öffnet und wie du dir einen Court sicherst.</p>
+        </div>
+        <form id="waitForm" novalidate>
+          <label for="wName">Name<input id="wName" name="name" autocomplete="name" required placeholder="Vor- und Nachname"></label>
+          <label for="wMail">E-Mail<input id="wMail" name="email" type="email" autocomplete="email" required placeholder="du@beispiel.de"></label>
+          <label for="wRole">Ich interessiere mich als<select id="wRole" name="role"><option>Einsteiger:in</option><option>Spieler:in mit Erfahrung</option><option>Familie</option><option>Unternehmen (Firmenevent)</option></select></label>
+          <label class="check" for="wOk"><input id="wOk" type="checkbox" required><span>Ich bin einverstanden, dass Pickleball Buddies mich per E-Mail zur Eröffnung informiert.</span></label>
+          <div class="cta"><button class="btn btn-dark" type="submit">Eintragen</button></div>
+          <p class="note" id="wNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot">
+    <svg class="pbb" viewBox="0 0 640 423.6" aria-hidden="true"><use href="#pbb-logo"/></svg>
+    <div class="who"><b>Pickleball Buddies · Lübbecke</b><span class="pbb-line"><b>P</b>ickleball, <b>B</b>eats &amp; <b>B</b>eyond</span></div>
+    <nav aria-label="Fußzeile"><a href="#hero">Nach oben</a><a href="#warteliste">Warteliste</a><a href="#impressum" id="impLink">Impressum</a><a href="#datenschutz" id="datLink">Datenschutz</a></nav>
+    <p class="credit"><span>Ein Projekt von Justus, Julian, Sarita und Felix</span><span>© 2026</span></p>
+  </div>
+</footer>
+
+<script src="js/main.js?v=20261029a" defer></script>
+</body>
+</html>

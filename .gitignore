@@ -1,0 +1,10 @@
+render/assets/
+render/out/
+__pycache__/
+.DS_Store
+
+# Original media, not used by the page (picklemov.mov is over GitHub's 100 MB limit)
+*.mov
+/felix.jpeg
+/julian2.jpeg
+/pbbcloth.png
